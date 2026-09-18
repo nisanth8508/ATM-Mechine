@@ -3,10 +3,15 @@ The Code to Write for the ATM mechine and bank side Customer Add method project 
 
 
 **💻 Features included:**
+
 🔹 Customer Login with ID & PIN
+
 🔹 Withdraw Money
+
 🔹 Deposit Money
+
 🔹 Balance Checking
+
 🔹 Add New Customer ID
 🔹 Input validation 
 🔹 Exit/Login menu handling
@@ -15,6 +20,7 @@ The Code to Write for the ATM mechine and bank side Customer Add method project 
 
 
 **🧠 Python concepts I practiced:**
+
 • Dictionaries & Nested Dictionaries
 • while loops
 • if / elif / else conditions
