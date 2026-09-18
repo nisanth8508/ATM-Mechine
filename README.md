@@ -8,7 +8,7 @@ The Code to Write for the ATM mechine and bank side Customer Add method project 
 🔹 Deposit Money
 🔹 Balance Checking
 🔹 Add New Customer ID
-🔹 Input validation
+🔹 Input validation 
 🔹 Exit/Login menu handling
 **🧠 Python concepts I practiced:**
 • Dictionaries & Nested Dictionaries
