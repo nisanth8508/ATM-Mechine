@@ -62,25 +62,26 @@ while True:
         else:
             print("Customer id Not found !!!")
     ## admin Login
-    elif("2"==optin):
-        cardid=int(input("enter the card id "))
+    elif(2==optin):
+        cardid=int(input("enter the card id : "))
         if cardid in customer:
             print("card id already exists ")
         else:
             name=input("enter name : ")
-            pin=int(input("enter the PiN"))
-            amount=int(input("enter the amount "))
-            customer[card]={
+            pin=int(input("enter the Pin : "))
+            amount=int(input("enter the amount : "))
+            customer[cardid]={
                 'name':name,
                 'pin': pin,
                 'amount':amount
             }
+            print("----------------------------------------------------------------------------------")
             print("Customer add Successfully ")
             print("Your id :",cardid )
             print("your Pin : ",pin)
-            
+            print("----------------------------------------------------------------------------------")
     else:
-        print("Thank You for Comeing ATM ")
+        print("Thank You for Coming ATM ")
 
 
 
