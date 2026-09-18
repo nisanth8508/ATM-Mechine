@@ -10,6 +10,10 @@ The Code to Write for the ATM mechine and bank side Customer Add method project 
 🔹 Add New Customer ID
 🔹 Input validation 
 🔹 Exit/Login menu handling
+
+
+
+
 **🧠 Python concepts I practiced:**
 • Dictionaries & Nested Dictionaries
 • while loops
