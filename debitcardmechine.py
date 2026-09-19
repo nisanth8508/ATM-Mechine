@@ -1,11 +1,11 @@
 customer={
     '1001': {
-        "name":"A",
+        "name":"Kumar ",
         'pin':1234,
         'amount':10000
     },
     '1002': {
-        'name':'B',
+        'name':'Raja',
         'pin':5678,
         'amount':5000
 
@@ -14,8 +14,8 @@ customer={
 
 
 while True:
-    print("1 / login")
-    print("2 / Add id")
+    print("1 /  Customer login")
+    print("2 / Admin Login")
     print("3 / exit")
 
     ## login
@@ -48,10 +48,10 @@ while True:
                     elif("2"==option):
                         amount=int(input("enter the amount : "))
                         customer[card]['amount']+=amount
-                        print("Amount Credit / Total Amount :",customer[card]['balance'])
+                        print("Amount Credit / Total Amount :",customer[card]['amount'])
                         print("----------------------------------------------------------------------------------")
-                    elif(3==option):
-                        print("balance : ",customer[card]['balance'])
+                    elif("3"==option):
+                        print("balance : ",customer[card]['amount'])
                         print("----------------------------------------------------------------------------------")
                     else:
                         print ("thank you ")
@@ -63,26 +63,45 @@ while True:
             print("Customer id Not found !!!")
     ## admin Login
     elif(2==optin):
-        cardid=int(input("enter the card id : "))
-        if cardid in customer:
-            print("card id already exists ")
-        else:
-            name=input("enter name : ")
-            pin=int(input("enter the Pin : "))
-            amount=int(input("enter the amount : "))
-            customer[cardid]={
-                'name':name,
-                'pin': pin,
-                'amount':amount
-            }
-            print("----------------------------------------------------------------------------------")
-            print("Customer add Successfully ")
-            print("Your id :",cardid )
-            print("your Pin : ",pin)
-            print("----------------------------------------------------------------------------------")
+        admin=input("Enter the Admin Id :")
+        password=input("Enter the Password : ")
+        if(admin=="admin1" and password=="admin123"):
+             while True:
+                 print("1 / Customer Add ")
+                 print("2 / Show Customer details : ")
+                 print("3 / logout ")
+                 select=input("enter the value :")
+                 if(select=="1"):
+                     cardid=input("enter the card id : ")
+                     if cardid in customer:
+                        print("card id already exists ")
+                     else:
+                        name=input("enter name : ")
+                        pin=int(input("enter the Pin : "))
+                        amount=int(input("enter the amount : "))
+                        customer[cardid]={
+                        'name':name,
+                        'pin': pin,
+                        'amount':amount
+                        }
+                        print("----------------------------------------------------------------------------------")
+                        print("Customer add Successfully ")
+                        print("Your id :",cardid )
+                        print("your Pin : ",pin)
+                        print("----------------------------------------------------------------------------------")
+                 elif(select=="2"):
+                         for i in customer:
+                             print("--------------------------------------------------------------------------------")
+                             print("Name:",customer[i]['name'])
+                             print("PIN :",customer[i]['pin'])
+                             print("Amount :",customer[i]['amount'])
+                             print("-----------------------------------------------------------------------------")
+                 else:
+                     print("---------------------------------------------------------------------------------------")
+                     break
     else:
-        print("Thank You for Coming ATM ")
-
+        print("Thank you Visiting ATM ")
+        break
 
 
 
